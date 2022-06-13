@@ -20,15 +20,12 @@ class TODOAdapter(val todoList : ArrayList<TODOs>) : RecyclerView.Adapter<TODOHo
 
     override fun onBindViewHolder(holder: TODOHolder, position: Int) {
         holder.binding.rowTextView.text = todoList[position].todoDescription
-        /*holder.binding.checkBox.setOnCheckedChangeListener { compoundButton, b ->
-            compoundButton.isChecked = true
-        }
-
-         */
 
         holder.binding.deleteTODO.setOnClickListener {
             deleteTODO(todoList[position])
         }
+
+
     }
 
     override fun getItemCount(): Int {
