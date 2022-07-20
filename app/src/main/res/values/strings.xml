@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TODO App</string>
+    <string name="sample_todo">Sample TODO</string>
 </resources>
